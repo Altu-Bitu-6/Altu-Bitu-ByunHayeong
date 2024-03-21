@@ -61,7 +61,7 @@ int main() {
 
         int diff = countDiff(word, original_freq); //첫번째 단어와 다른 알파벳 개수 구하는 함수 호출
         // 비슷한 단어 세기
-        if (diff == 0 || diff == 1 || diff == 2 && original.length() == word.length()) {  //
+        if (diff == 0 || diff == 1 || diff == 2 && original.length() == word.length()) {  //같은 구성인 경우, 단어와 원본 단어의 차이가 하나인 경우(더하거나 뺀 경우), 단어와 원본 단어의 차이가 두 개이고 단어의 길이가 동일한 경우(변경한 경우)
             ans++;  //비슷한 단어 개수 증가시키기
         }
     }
